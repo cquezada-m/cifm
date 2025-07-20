@@ -1,515 +1,567 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      CIFM Refrigeración Industrial | Cámaras Frigoríficas y Monitoreo Remoto en
-      Chile
-    </title>
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="./assets/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#2b5797" />
-    <meta
-      name="msapplication-config"
-      content="./assets/favicon/browserconfig.xml"
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <meta
-      name="description"
-      content="Expertos en refrigeración industrial en Chile. Instalación de cámaras frigoríficas, monitoreo remoto 24/7 y mantención especializada. Soluciones eficientes y confiables para tu negocio."
-    />
-    <meta
-      name="keywords"
-      content="refrigeración industrial, cámaras frigoríficas, monitoreo remoto, mantención industrial, frío industrial, Chile"
-    />
-    <meta name="author" content="CIFM Refrigeración Industrial" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      property="og:title"
-      content="CIFM Refrigeración Industrial | Soluciones de Frío Industrial"
-    />
-    <meta
-      property="og:description"
-      content="Expertos en refrigeración industrial, cámaras frigoríficas y monitoreo remoto. Soluciones eficientes y confiables para tu negocio."
-    />
-    <meta property="og:image" content="./assets/CIFM.png" />
-    <meta property="og:url" content="https://cifm.cl" />
-    <meta property="og:type" content="website" />
-    <link rel="canonical" href="https://cifm.cl" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <style>
-      :root {
-        /* Colores principales */
-        --primary-900: #0a1f3d; /* Azul más oscuro para textos y elementos principales */
-        --primary-800: #1a365d; /* Azul principal de la marca */
-        --primary-700: #2c4a7d; /* Azul para hover states */
-        --primary-600: #3d5f9d; /* Azul para acentos */
-        --primary-500: #4e74bd; /* Azul para elementos secundarios */
-        --primary-400: #6f8fcd; /* Azul para fondos claros */
-        --primary-300: #90aadd; /* Azul para fondos muy claros */
-        --primary-200: #b1c5ed; /* Azul para fondos ultra claros */
-        --primary-100: #d2e0fd; /* Azul para fondos super claros */
 
-        /* Colores de acento */
-        --accent-700: #1e8449; /* Verde oscuro para textos importantes */
-        --accent-600: #27ae60; /* Verde principal */
-        --accent-500: #2ecc71; /* Verde para elementos destacados */
-        --accent-400: #58d68d; /* Verde para hover states */
-        --accent-300: #84e0a9; /* Verde para fondos claros */
-        --accent-200: #b0eac5; /* Verde para fondos muy claros */
-        --accent-100: #dcf4e1; /* Verde para fondos ultra claros */
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    CIFM Refrigeración Industrial | Cámaras Frigoríficas y Monitoreo Remoto en
+    Chile
+  </title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <meta name="msapplication-TileColor" content="#2b5797" />
+  <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description"
+    content="Expertos en refrigeración industrial en Chile. Instalación de cámaras frigoríficas, monitoreo remoto 24/7 y mantención especializada. Soluciones eficientes y confiables para tu negocio." />
+  <meta name="keywords"
+    content="refrigeración industrial, cámaras frigoríficas, monitoreo remoto, mantención industrial, frío industrial, Chile" />
+  <meta name="author" content="CIFM Refrigeración Industrial" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="CIFM Refrigeración Industrial | Soluciones de Frío Industrial" />
+  <meta property="og:description"
+    content="Expertos en refrigeración industrial, cámaras frigoríficas y monitoreo remoto. Soluciones eficientes y confiables para tu negocio." />
+  <meta property="og:image" content="./assets/CIFM.png" />
+  <meta property="og:url" content="https://cifm.cl" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://cifm.cl" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    :root {
+      /* Colores principales */
+      --primary-900: #0a1f3d;
+      /* Azul más oscuro para textos y elementos principales */
+      --primary-800: #1a365d;
+      /* Azul principal de la marca */
+      --primary-700: #2c4a7d;
+      /* Azul para hover states */
+      --primary-600: #3d5f9d;
+      /* Azul para acentos */
+      --primary-500: #4e74bd;
+      /* Azul para elementos secundarios */
+      --primary-400: #6f8fcd;
+      /* Azul para fondos claros */
+      --primary-300: #90aadd;
+      /* Azul para fondos muy claros */
+      --primary-200: #b1c5ed;
+      /* Azul para fondos ultra claros */
+      --primary-100: #d2e0fd;
+      /* Azul para fondos super claros */
 
-        /* Colores neutros */
-        --neutral-900: #1a1a1a; /* Negro para textos principales */
-        --neutral-800: #333333; /* Gris muy oscuro */
-        --neutral-700: #4d4d4d; /* Gris oscuro */
-        --neutral-600: #666666; /* Gris medio */
-        --neutral-500: #808080; /* Gris */
-        --neutral-400: #999999; /* Gris claro */
-        --neutral-300: #b3b3b3; /* Gris muy claro */
-        --neutral-200: #cccccc; /* Gris ultra claro */
-        --neutral-100: #e6e6e6; /* Gris super claro */
-        --neutral-50: #f5f5f5; /* Gris casi blanco */
+      /* Colores de acento */
+      --accent-700: #1e8449;
+      /* Verde oscuro para textos importantes */
+      --accent-600: #27ae60;
+      /* Verde principal */
+      --accent-500: #2ecc71;
+      /* Verde para elementos destacados */
+      --accent-400: #58d68d;
+      /* Verde para hover states */
+      --accent-300: #84e0a9;
+      /* Verde para fondos claros */
+      --accent-200: #b0eac5;
+      /* Verde para fondos muy claros */
+      --accent-100: #dcf4e1;
+      /* Verde para fondos ultra claros */
 
-        /* Colores de estado */
-        --success-500: #27ae60; /* Verde para éxito */
-        --warning-500: #f39c12; /* Naranja para advertencias */
-        --error-500: #e74c3c; /* Rojo para errores */
-        --info-500: #3498db; /* Azul para información */
+      /* Colores neutros */
+      --neutral-900: #1a1a1a;
+      /* Negro para textos principales */
+      --neutral-800: #333333;
+      /* Gris muy oscuro */
+      --neutral-700: #4d4d4d;
+      /* Gris oscuro */
+      --neutral-600: #666666;
+      /* Gris medio */
+      --neutral-500: #808080;
+      /* Gris */
+      --neutral-400: #999999;
+      /* Gris claro */
+      --neutral-300: #b3b3b3;
+      /* Gris muy claro */
+      --neutral-200: #cccccc;
+      /* Gris ultra claro */
+      --neutral-100: #e6e6e6;
+      /* Gris super claro */
+      --neutral-50: #f5f5f5;
+      /* Gris casi blanco */
 
-        /* Gradientes */
-        --gradient-primary: linear-gradient(
-          135deg,
+      /* Colores de estado */
+      --success-500: #27ae60;
+      /* Verde para éxito */
+      --warning-500: #f39c12;
+      /* Naranja para advertencias */
+      --error-500: #e74c3c;
+      /* Rojo para errores */
+      --info-500: #3498db;
+      /* Azul para información */
+
+      /* Gradientes */
+      --gradient-primary: linear-gradient(135deg,
           var(--primary-800) 0%,
-          var(--primary-900) 100%
-        );
-        --gradient-secondary: linear-gradient(
-          135deg,
+          var(--primary-900) 100%);
+      --gradient-secondary: linear-gradient(135deg,
           var(--accent-600) 0%,
-          var(--accent-700) 100%
-        );
-        --gradient-light: linear-gradient(
-          135deg,
+          var(--accent-700) 100%);
+      --gradient-light: linear-gradient(135deg,
           var(--neutral-50) 0%,
-          var(--neutral-100) 100%
-        );
+          var(--neutral-100) 100%);
+    }
+
+    .nav-scroll {
+      background: rgba(10, 31, 61, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    .stats-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .stats-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .service-card {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      background: var(--primary-100);
+    }
+
+    .testimonial-card {
+      background: var(--neutral-50);
+      transition: all 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      background: var(--neutral-100);
+    }
+
+    .hero-section {
+      background: var(--gradient-primary);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="none"/><path d="M0,0 L100,0 L100,100 L0,100 Z" fill="rgba(255,255,255,0.05)"/></svg>');
+      opacity: 0.1;
+    }
+
+    .floating {
+      animation: floating 6s ease-in-out infinite;
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translateY(0px);
       }
 
-      .nav-scroll {
-        background: rgba(10, 31, 61, 0.95);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      50% {
+        transform: translateY(-20px);
       }
 
-      .hero-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-        opacity: 0.3;
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    .text-gradient {
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bounce 3s infinite;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
       }
 
-      .stats-card {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        transition: all 0.3s ease;
+      40% {
+        transform: translateY(-20px);
       }
 
-      .stats-card:hover {
-        transform: translateY(-5px);
-        background: rgba(255, 255, 255, 0.2);
+      60% {
+        transform: translateY(-10px);
       }
+    }
 
-      .service-card {
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
+    .custom-shape {
+      clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+    }
 
-      .service-card:hover {
-        transform: translateY(-10px) scale(1.02);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        background: var(--primary-100);
-      }
+    .text-shadow {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
 
-      .testimonial-card {
-        background: var(--neutral-50);
-        transition: all 0.3s ease;
-      }
+    .gradient-border {
+      position: relative;
+    }
 
-      .testimonial-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        background: var(--neutral-100);
-      }
+    .gradient-border::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 2px;
+      background: var(--gradient-primary);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
 
-      .hero-section {
-        background: var(--gradient-primary);
-        position: relative;
-        overflow: hidden;
-      }
+    .text-primary-900 {
+      color: var(--primary-900);
+    }
 
-      .hero-section::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="none"/><path d="M0,0 L100,0 L100,100 L0,100 Z" fill="rgba(255,255,255,0.05)"/></svg>');
-        opacity: 0.1;
-      }
+    .text-primary-800 {
+      color: var(--primary-800);
+    }
 
-      .floating {
-        animation: floating 6s ease-in-out infinite;
-      }
+    .text-primary-700 {
+      color: var(--primary-700);
+    }
 
-      @keyframes floating {
-        0% {
-          transform: translateY(0px);
-        }
-        50% {
-          transform: translateY(-20px);
-        }
-        100% {
-          transform: translateY(0px);
-        }
-      }
+    .text-primary-600 {
+      color: var(--primary-600);
+    }
 
-      .text-gradient {
-        background: var(--gradient-primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+    .text-primary-500 {
+      color: var(--primary-500);
+    }
 
-      .glass-effect {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
+    .text-primary-400 {
+      color: var(--primary-400);
+    }
 
-      .hover-scale {
-        transition: transform 0.3s ease;
-      }
+    .text-primary-300 {
+      color: var(--primary-300);
+    }
 
-      .hover-scale:hover {
-        transform: scale(1.05);
-      }
+    .text-primary-200 {
+      color: var(--primary-200);
+    }
 
-      .scroll-indicator {
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        animation: bounce 2s infinite;
-      }
+    .text-primary-100 {
+      color: var(--primary-100);
+    }
 
-      @keyframes bounce {
-        0%,
-        20%,
-        50%,
-        80%,
-        100% {
-          transform: translateY(0);
-        }
-        40% {
-          transform: translateY(-20px);
-        }
-        60% {
-          transform: translateY(-10px);
-        }
-      }
+    .text-accent-700 {
+      color: var(--accent-700);
+    }
 
-      .custom-shape {
-        clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
-      }
+    .text-accent-600 {
+      color: var(--accent-600);
+    }
 
-      .text-shadow {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-      }
+    .text-accent-500 {
+      color: var(--accent-500);
+    }
 
-      .gradient-border {
-        position: relative;
-      }
+    .text-accent-400 {
+      color: var(--accent-400);
+    }
 
-      .gradient-border::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        border-radius: inherit;
-        padding: 2px;
-        background: var(--gradient-primary);
-        -webkit-mask: linear-gradient(#fff 0 0) content-box,
-          linear-gradient(#fff 0 0);
-        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-        mask-composite: exclude;
-      }
+    .text-accent-300 {
+      color: var(--accent-300);
+    }
 
-      .text-primary-900 {
-        color: var(--primary-900);
-      }
-      .text-primary-800 {
-        color: var(--primary-800);
-      }
-      .text-primary-700 {
-        color: var(--primary-700);
-      }
-      .text-primary-600 {
-        color: var(--primary-600);
-      }
-      .text-primary-500 {
-        color: var(--primary-500);
-      }
-      .text-primary-400 {
-        color: var(--primary-400);
-      }
-      .text-primary-300 {
-        color: var(--primary-300);
-      }
-      .text-primary-200 {
-        color: var(--primary-200);
-      }
-      .text-primary-100 {
-        color: var(--primary-100);
-      }
+    .text-accent-200 {
+      color: var(--accent-200);
+    }
 
-      .text-accent-700 {
-        color: var(--accent-700);
-      }
-      .text-accent-600 {
-        color: var(--accent-600);
-      }
-      .text-accent-500 {
-        color: var(--accent-500);
-      }
-      .text-accent-400 {
-        color: var(--accent-400);
-      }
-      .text-accent-300 {
-        color: var(--accent-300);
-      }
-      .text-accent-200 {
-        color: var(--accent-200);
-      }
-      .text-accent-100 {
-        color: var(--accent-100);
-      }
+    .text-accent-100 {
+      color: var(--accent-100);
+    }
 
-      .bg-primary-900 {
-        background-color: var(--primary-900);
-      }
-      .bg-primary-800 {
-        background-color: var(--primary-800);
-      }
-      .bg-primary-700 {
-        background-color: var(--primary-700);
-      }
-      .bg-primary-600 {
-        background-color: var(--primary-600);
-      }
-      .bg-primary-500 {
-        background-color: var(--primary-500);
-      }
-      .bg-primary-400 {
-        background-color: var(--primary-400);
-      }
-      .bg-primary-300 {
-        background-color: var(--primary-300);
-      }
-      .bg-primary-200 {
-        background-color: var(--primary-200);
-      }
-      .bg-primary-100 {
-        background-color: var(--primary-100);
-      }
+    .bg-primary-900 {
+      background-color: var(--primary-900);
+    }
 
-      .bg-accent-700 {
-        background-color: var(--accent-700);
-      }
-      .bg-accent-600 {
-        background-color: var(--accent-600);
-      }
-      .bg-accent-500 {
-        background-color: var(--accent-500);
-      }
-      .bg-accent-400 {
-        background-color: var(--accent-400);
-      }
-      .bg-accent-300 {
-        background-color: var(--accent-300);
-      }
-      .bg-accent-200 {
-        background-color: var(--accent-200);
-      }
-      .bg-accent-100 {
-        background-color: var(--accent-100);
-      }
+    .bg-primary-800 {
+      background-color: var(--primary-800);
+    }
 
-      .bg-neutral-900 {
-        background-color: var(--neutral-900);
-      }
-      .bg-neutral-800 {
-        background-color: var(--neutral-800);
-      }
-      .bg-neutral-700 {
-        background-color: var(--neutral-700);
-      }
-      .bg-neutral-600 {
-        background-color: var(--neutral-600);
-      }
-      .bg-neutral-500 {
-        background-color: var(--neutral-500);
-      }
-      .bg-neutral-400 {
-        background-color: var(--neutral-400);
-      }
-      .bg-neutral-300 {
-        background-color: var(--neutral-300);
-      }
-      .bg-neutral-200 {
-        background-color: var(--neutral-200);
-      }
-      .bg-neutral-100 {
-        background-color: var(--neutral-100);
-      }
-      .bg-neutral-50 {
-        background-color: var(--neutral-50);
-      }
+    .bg-primary-700 {
+      background-color: var(--primary-700);
+    }
 
-      .text-success {
-        color: var(--success-500);
-      }
-      .text-warning {
-        color: var(--warning-500);
-      }
-      .text-error {
-        color: var(--error-500);
-      }
-      .text-info {
-        color: var(--info-500);
-      }
+    .bg-primary-600 {
+      background-color: var(--primary-600);
+    }
 
-      .bg-success {
-        background-color: var(--success-500);
-      }
-      .bg-warning {
-        background-color: var(--warning-500);
-      }
-      .bg-error {
-        background-color: var(--error-500);
-      }
-      .bg-info {
-        background-color: var(--info-500);
-      }
+    .bg-primary-500 {
+      background-color: var(--primary-500);
+    }
 
-      @media (prefers-reduced-motion: reduce) {
-        * {
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-          transition-duration: 0.01ms !important;
-          scroll-behavior: auto !important;
-        }
-      }
+    .bg-primary-400 {
+      background-color: var(--primary-400);
+    }
 
-      .contrast-text {
-        color: var(--neutral-900);
-      }
+    .bg-primary-300 {
+      background-color: var(--primary-300);
+    }
 
-      .contrast-bg {
-        background-color: var(--neutral-50);
-      }
+    .bg-primary-200 {
+      background-color: var(--primary-200);
+    }
 
-      *:focus {
-        outline: 3px solid var(--accent-500);
-        outline-offset: 2px;
-      }
+    .bg-primary-100 {
+      background-color: var(--primary-100);
+    }
 
-      .readable-text {
-        line-height: 1.6;
-        letter-spacing: 0.01em;
-      }
+    .bg-accent-700 {
+      background-color: var(--accent-700);
+    }
 
-      .input-error {
-        border-color: #ef4444 !important;
-        background-color: rgba(239, 68, 68, 0.1) !important;
-      }
+    .bg-accent-600 {
+      background-color: var(--accent-600);
+    }
 
-      .error-message {
-        color: #ef4444;
-        font-size: 0.875rem;
-        margin-top: 0.25rem;
-        display: none;
-      }
+    .bg-accent-500 {
+      background-color: var(--accent-500);
+    }
 
-      .input-error + .error-message {
-        display: block;
-      }
+    .bg-accent-400 {
+      background-color: var(--accent-400);
+    }
 
-      .chat-widget {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1000;
-      }
+    .bg-accent-300 {
+      background-color: var(--accent-300);
+    }
 
-      .back-to-top {
-        position: fixed;
-        bottom: 80px;
-        right: 20px;
-        z-index: 999;
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
+    .bg-accent-200 {
+      background-color: var(--accent-200);
+    }
 
-      .back-to-top.visible {
-        opacity: 1;
-      }
+    .bg-accent-100 {
+      background-color: var(--accent-100);
+    }
 
-      
-    </style>
+    .bg-neutral-900 {
+      background-color: var(--neutral-900);
+    }
+
+    .bg-neutral-800 {
+      background-color: var(--neutral-800);
+    }
+
+    .bg-neutral-700 {
+      background-color: var(--neutral-700);
+    }
+
+    .bg-neutral-600 {
+      background-color: var(--neutral-600);
+    }
+
+    .bg-neutral-500 {
+      background-color: var(--neutral-500);
+    }
+
+    .bg-neutral-400 {
+      background-color: var(--neutral-400);
+    }
+
+    .bg-neutral-300 {
+      background-color: var(--neutral-300);
+    }
+
+    .bg-neutral-200 {
+      background-color: var(--neutral-200);
+    }
+
+    .bg-neutral-100 {
+      background-color: var(--neutral-100);
+    }
+
+    .bg-neutral-50 {
+      background-color: var(--neutral-50);
+    }
+
+    .text-success {
+      color: var(--success-500);
+    }
+
+    .text-warning {
+      color: var(--warning-500);
+    }
+
+    .text-error {
+      color: var(--error-500);
+    }
+
+    .text-info {
+      color: var(--info-500);
+    }
+
+    .bg-success {
+      background-color: var(--success-500);
+    }
+
+    .bg-warning {
+      background-color: var(--warning-500);
+    }
+
+    .bg-error {
+      background-color: var(--error-500);
+    }
+
+    .bg-info {
+      background-color: var(--info-500);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    .contrast-text {
+      color: var(--neutral-900);
+    }
+
+    .contrast-bg {
+      background-color: var(--neutral-50);
+    }
+
+    *:focus {
+      outline: 3px solid var(--accent-500);
+      outline-offset: 2px;
+    }
+
+    .readable-text {
+      line-height: 1.6;
+      letter-spacing: 0.01em;
+    }
+
+    .input-error {
+      border-color: #ef4444 !important;
+      background-color: rgba(239, 68, 68, 0.1) !important;
+    }
+
+    .error-message {
+      color: #ef4444;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+      display: none;
+    }
+
+    .input-error+.error-message {
+      display: block;
+    }
+
+    .chat-widget {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      z-index: 999;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transition: none !important;
+    }
+    
+    .swiper-button-disabled {
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+  </style>
 
 
-    <script type="application/ld+json">
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -557,380 +609,356 @@
         ]
       }
     </script>
-  </head>
-  <body class="bg-gray-50 text-gray-800">
-    <!-- Navbar -->
-    <nav
-      class="fixed w-full z-50 transition-all duration-300 bg-primary-900"
-      id="navbar"
-    >
-      <div class="max-w-7xl mx-auto px-6 py-4">
-        <div class="flex justify-between items-center">
-          <div class="hover-scale">
-            <img src="./assets/CIFM.png" alt="CIFM Logo" class="h-20" />
-          </div>
-          <div class="hidden md:flex space-x-8">
-            <a
-              href="#inicio"
-              class="text-white hover:text-primary-300 transition relative group"
-            >
-              Inicio
-              <span
-                class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-300 transition-all duration-300 group-hover:w-full"
-              ></span>
-            </a>
-            <a
-              href="#servicios"
-              class="text-white hover:text-primary-300 transition relative group"
-            >
-              Servicios
-              <span
-                class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-300 transition-all duration-300 group-hover:w-full"
-              ></span>
-            </a>
-            <a
-              href="#nosotros"
-              class="text-white hover:text-primary-300 transition relative group"
-            >
-              Nosotros
-              <span
-                class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-300 transition-all duration-300 group-hover:w-full"
-              ></span>
-            </a>
-            <a
-              href="#testimonios"
-              class="text-white hover:text-primary-300 transition relative group"
-            >
-              Testimonios
-              <span
-                class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-300 transition-all duration-300 group-hover:w-full"
-              ></span>
-            </a>
-            <a
-              href="#contacto"
-              class="text-white hover:text-primary-300 transition relative group"
-            >
-              Contacto
-              <span
-                class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-300 transition-all duration-300 group-hover:w-full"
-              ></span>
-            </a>
-          </div>
-          <div class="md:hidden">
-            <button id="mobile-menu-button" class="text-white">
-              <i class="fas fa-bars text-2xl"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-sitrad-blue">
-        <div class="px-6 py-4 space-y-4">
-          <a href="#inicio" class="block text-white">Inicio</a>
-          <a href="#servicios" class="block text-white">Servicios</a>
-          <a href="#nosotros" class="block text-white">Nosotros</a>
-          <a href="#testimonios" class="block text-white">Testimonios</a>
-          <a href="#contacto" class="block text-white">Contacto</a>
-        </div>
-      </div>
-    </nav>
+</head>
 
-    <!-- Hero -->
-    <section
-      id="inicio"
-      class="relative min-h-screen flex items-center hero-section text-white py-20 px-6 custom-shape"
-    >
-      <video class="hero-video" autoplay muted loop>
-        <source
-          src="https://assets.mixkit.co/videos/preview/mixkit-factory-workers-working-on-a-production-line-39806-large.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div
-        class="max-w-7xl mx-auto text-center relative z-10"
-        data-aos="fade-up"
-      >
-        <h1
-          class="text-6xl md:text-7xl font-bold mb-6 leading-tight text-shadow"
-        >
-          Refrigeración Industrial en Chile <br />
-          <span class="text-blue-300 floating"
-            >Soluciones Eficientes y Confiables</span
-          >
-        </h1>
-        <p
-          class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto glass-effect p-6 rounded-xl"
-        >
-          Expertos en diseños, instalación y mantención de cámaras frigoríficas
-          con monitoreo remoto 24/7. Más de 15 años de experiencia en
-          refrigeración industrial en Chile.
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="fixed w-full z-50 transition-all duration-300 bg-primary-900" id="navbar">
+    <div class="max-w-7xl mx-auto px-6 py-2">
+      <div class="flex justify-between items-center">
+        <div class="hover-scale">
+          <img src="./assets/CIFM.png" alt="CIFM Logo" class="h-16" />
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#inicio" class="text-white hover:text-primary-300 transition relative group">
+            Inicio
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-300 transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#servicios" class="text-white hover:text-primary-300 transition relative group">
+            Servicios
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-300 transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#nosotros" class="text-white hover:text-primary-300 transition relative group">
+            Nosotros
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-300 transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#testimonios" class="text-white hover:text-primary-300 transition relative group">
+            Testimonios
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-300 transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#contacto" class="text-white hover:text-primary-300 transition relative group">
+            Contacto
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-300 transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </div>
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-white">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-sitrad-blue">
+      <div class="px-6 py-4 space-y-4">
+        <a href="#inicio" class="block text-white">Inicio</a>
+        <a href="#servicios" class="block text-white">Servicios</a>
+        <a href="#nosotros" class="block text-white">Nosotros</a>
+        <a href="#testimonios" class="block text-white">Testimonios</a>
+        <a href="#contacto" class="block text-white">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="inicio" class="relative min-h-screen flex items-center hero-section text-white py-20 px-6 custom-shape">
+    <video class="hero-video" autoplay muted loop>
+      <source
+        src="https://assets.mixkit.co/videos/preview/mixkit-factory-workers-working-on-a-production-line-39806-large.mp4"
+        type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="max-w-7xl mx-auto text-center relative z-10" data-aos="fade-up">
+      <h1 class="text-6xl md:text-7xl font-bold mb-6 leading-tight text-shadow">
+        Refrigeración Industrial en Chile <br />
+        <span class="text-blue-300 floating">Soluciones Eficientes y Confiables</span>
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto glass-effect p-6 rounded-xl">
+        Expertos en diseños, instalación y mantención de cámaras frigoríficas
+        con monitoreo remoto 24/7. Más de 30 años de experiencia en
+        refrigeración industrial en Chile.
+      </p>
+
+      <!-- Stats Section -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        <div class="stats-card p-4 rounded-lg">
+          <div class="text-3xl font-bold mb-2">30+</div>
+          <div class="text-sm">Años de experiencia</div>
+        </div>
+        <div class="stats-card p-4 rounded-lg">
+          <div class="text-3xl font-bold mb-2">35+</div>
+          <div class="text-sm">Proyectos completados</div>
+        </div>
+        <div class="stats-card p-4 rounded-lg">
+          <div class="text-3xl font-bold mb-2">24/7</div>
+          <div class="text-sm">Soporte técnico</div>
+        </div>
+        <div class="stats-card p-4 rounded-lg">
+          <div class="text-3xl font-bold mb-2">100%</div>
+          <div class="text-sm">Clientes satisfechos</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#contacto"
+          class="bg-white text-blue-800 font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+          <i class="fas fa-calculator mr-2"></i>Cotiza sin compromiso
+        </a>
+        <a href="#servicios"
+          class="border-2 border-white px-8 py-4 rounded-lg hover:bg-white hover:text-blue-800 transition-all duration-300 transform hover:scale-105">
+          <i class="fas fa-cogs mr-2"></i>Ver servicios
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down text-white text-2xl"></i>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-20 bg-gradient-to-b from-neutral-50 to-primary-100 relative overflow-hidden scroll-mt-56">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-5xl font-bold text-gradient mb-6">
+          Servicios de Refrigeración Industrial en Chile
+        </h2>
+        
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto glass-effect p-4 rounded-xl">
+          Soluciones especializadas en frío industrial con tecnología de punta para tu negocio
         </p>
-
-        <!-- Stats Section -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-          <div class="stats-card p-4 rounded-lg">
-            <div class="text-3xl font-bold mb-2">15+</div>
-            <div class="text-sm">Años de experiencia</div>
-          </div>
-          <div class="stats-card p-4 rounded-lg">
-            <div class="text-3xl font-bold mb-2">35+</div>
-            <div class="text-sm">Proyectos completados</div>
-          </div>
-          <div class="stats-card p-4 rounded-lg">
-            <div class="text-3xl font-bold mb-2">24/7</div>
-            <div class="text-sm">Soporte técnico</div>
-          </div>
-          <div class="stats-card p-4 rounded-lg">
-            <div class="text-3xl font-bold mb-2">100%</div>
-            <div class="text-sm">Clientes satisfechos</div>
-          </div>
-        </div>
-
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <a
-            href="#contacto"
-            class="bg-white text-blue-800 font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
-          >
-            <i class="fas fa-calculator mr-2"></i>Cotiza sin compromiso
-          </a>
-          <a
-            href="#servicios"
-            class="border-2 border-white px-8 py-4 rounded-lg hover:bg-white hover:text-blue-800 transition-all duration-300 transform hover:scale-105"
-          >
-            <i class="fas fa-cogs mr-2"></i>Ver servicios
-          </a>
-        </div>
       </div>
-      <div class="scroll-indicator">
-        <i class="fas fa-chevron-down text-white text-2xl"></i>
-      </div>
-    </section>
 
-    <!-- Servicios -->
-    <section
-      id="servicios"
-      class="py-20 bg-gradient-to-b from-neutral-50 to-primary-100 relative overflow-hidden"
-    >
-      <div class="max-w-7xl mx-auto px-6 relative z-10">
-        <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-5xl font-bold text-gradient mb-6">
-            Servicios de Refrigeración Industrial en Chile
-          </h2>
-          <p
-            class="text-xl text-gray-600 max-w-2xl mx-auto glass-effect p-4 rounded-xl"
-          >
-            Soluciones especializadas en frío industrial con tecnología de punta
-            para tu negocio
-          </p>
+
+
+      <!-- Aca se editan las cards -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Cámaras Frigoríficas -->
+        <div class="service-card-3d group min-w-[320px] overflow-x-auto-hide-scrollbar" data-aos="fade-up"
+          data-aos-delay="100">
+          <div
+            class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105">
+            <img src="./assets/camaras.webp" alt="Cámaras Frigoríficas"
+              class="w-full h-80  object-cover rounded-xl mb-4" />
+            <div class="mb-6">
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div class="relative z-10">
+              <div class="mb-6">
+                <div
+                  class="text-blue-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110">
+                  <i class="fas fa-snowflake"></i>
+                </div>
+              </div>
+              <h3
+                class="text-2xl font-semibold text-blue-700 mb-4 group-hover:text-blue-800 transition-colors duration-300">
+                Cámaras Frigoríficas
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                Diseñamos y construimos cámaras a medida, con aislación
+                térmica eficiente y sistemas confiables.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Aislación térmica de alta eficiencia</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Sistemas de control avanzados</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Diseño personalizado</span>
+                </li>
+              </ul>
+              <div class="mt-6">
+                <a href="#contacto"
+                  class="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                  <span>Saber más</span>
+                  <i
+                    class="fas fa-arrow-right ml-2 transform transition-transform duration-300 group-hover:translate-x-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
-          <!-- Cámaras Frigoríficas -->
+        <!-- Monitoreo con Sitrad -->
+        <div class="service-card-3d group min-w-[320px] overflow-x-auto-hide-scrollbar" data-aos="fade-up"
+          data-aos-delay="200">
           <div
-            class="service-card-3d group"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div
-              class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105"
-            >
-            <img src="./assets/camaras.webp" alt="Cámaras Frigoríficas" class="w-full h-80 object-cover rounded-xl mb-4" />
+            class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105">
+            <img src="./assets/sitradcifm.webp" alt="Cámaras Frigoríficas"
+              class="w-full h-80 object-cover rounded-xl mb-4" />
             <div class="mb-6">
             </div>
-              <div
-                class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              ></div>
-              <div class="relative z-10">
-                <div class="mb-6">
-                  <div
-                    class="text-blue-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110"
-                  >
-                    <i class="fas fa-snowflake"></i>
-                  </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div class="relative z-10">
+              <div class="mb-6">
+                <div
+                  class="text-green-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110">
+                  <i class="fas fa-desktop"></i>
                 </div>
-                <h3
-                  class="text-2xl font-semibold text-blue-700 mb-4 group-hover:text-blue-800 transition-colors duration-300"
-                >
-                  Cámaras Frigoríficas
-                </h3>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                  Diseñamos y construimos cámaras a medida, con aislación
-                  térmica eficiente y sistemas confiables.
-                </p>
-                <ul class="space-y-2 mb-6">
-                  <li class="flex items-center">
-                    <i class="fas fa-check text-green-500 mr-2"></i>
-                    <span>Aislación térmica de alta eficiencia</span>
-                  </li>
-                  <li class="flex items-center">
-                    <i class="fas fa-check text-green-500 mr-2"></i>
-                    <span>Sistemas de control avanzados</span>
-                  </li>
-                  <li class="flex items-center">
-                    <i class="fas fa-check text-green-500 mr-2"></i>
-                    <span>Diseño personalizado</span>
-                  </li>
-                </ul>
-                <div class="mt-6">
-                  <a
-                    href="#contacto"
-                    class="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-300"
-                  >
-                    <span>Saber más</span>
-                    <i
-                      class="fas fa-arrow-right ml-2 transform transition-transform duration-300 group-hover:translate-x-2"
-                    ></i>
-                  </a>
-                </div>
+              </div>
+              <h3
+                class="text-2xl font-semibold text-green-700 mb-4 group-hover:text-green-800 transition-colors duration-300">
+                Monitoreo en tiempo real 
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                Control en tiempo real desde cualquier lugar. Detecta
+                anomalías y recibe alertas automáticas.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Monitoreo 24/7</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Alertas automáticas</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Acceso remoto</span>
+                </li>
+              </ul>
+              <div class="mt-6">
+                <a href="#contacto"
+                  class="inline-flex items-center text-green-600 hover:text-green-800 transition-colors duration-300">
+                  <span>Saber más</span>
+                  <i
+                    class="fas fa-arrow-right ml-2 transform transition-transform duration-300 group-hover:translate-x-2"></i>
+                </a>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Monitoreo con Sitrad -->
+        <!-- Mantención Especializada -->
+        <div class="service-card-3d group min-w-[320px] overflow-x-auto-hide-scrollbar" data-aos="fade-up"
+          data-aos-delay="300">
           <div
-            class="service-card-3d group"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div
-              class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105"
-            >
-            <img src="./assets/sitradcifm.webp" alt="Cámaras Frigoríficas" class="w-full h-80 object-cover rounded-xl mb-4" />
+            class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105">
+            <img src="./assets/mantencion.webp" alt="Cámaras Frigoríficas"
+              class="w-full h-80 object-cover rounded-xl mb-4" />
             <div class="mb-6">
             </div>
-              <div
-                class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              ></div>
-              <div class="relative z-10">
-                <div class="mb-6">
-                  <div
-                    class="text-green-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110"
-                  >
-                    <i class="fas fa-desktop"></i>
-                  </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div class="relative z-10">
+              <div class="mb-6">
+                <div
+                  class="text-blue-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110">
+                  <i class="fas fa-tools"></i>
                 </div>
-                <h3
-                  class="text-2xl font-semibold text-green-700 mb-4 group-hover:text-green-800 transition-colors duration-300"
-                >
-                  Monitoreo en tiempo real con Sitrad
-                </h3>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                  Control en tiempo real desde cualquier lugar. Detecta
-                  anomalías y recibe alertas automáticas.
-                </p>
-                <ul class="space-y-2 mb-6">
-                  <li class="flex items-center">
-                    <i class="fas fa-check text-green-500 mr-2"></i>
-                    <span>Monitoreo 24/7</span>
-                  </li>
-                  <li class="flex items-center">
-                    <i class="fas fa-check text-green-500 mr-2"></i>
-                    <span>Alertas automáticas</span>
-                  </li>
-                  <li class="flex items-center">
-                    <i class="fas fa-check text-green-500 mr-2"></i>
-                    <span>Acceso remoto</span>
-                  </li>
-                </ul>
-                <div class="mt-6">
-                  <a
-                    href="#contacto"
-                    class="inline-flex items-center text-green-600 hover:text-green-800 transition-colors duration-300"
-                  >
-                    <span>Saber más</span>
-                    <i
-                      class="fas fa-arrow-right ml-2 transform transition-transform duration-300 group-hover:translate-x-2"
-                    ></i>
-                  </a>
-                </div>
+              </div>
+              <h3
+                class="text-2xl font-semibold text-blue-700 mb-4 group-hover:text-blue-800 transition-colors duration-300">
+                Mantención Especializada
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                Evita pérdidas con mantenciones preventivas y soporte técnico
+                rápido y eficaz.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Mantenimiento preventivo</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Soporte técnico 24/7</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Diagnóstico remoto</span>
+                </li>
+              </ul>
+              <div class="mt-6">
+                <a href="#contacto"
+                  class="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                  <span>Saber más</span>
+                  <i
+                    class="fas fa-arrow-right ml-2 transform transition-transform duration-300 group-hover:translate-x-2"></i>
+                </a>
               </div>
             </div>
           </div>
-
-          <!-- Mantención Especializada -->
-          <div
-            class="service-card-3d group"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div
-              class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105"
-            >
-            <img src="./assets/mantencion.webp" alt="Cámaras Frigoríficas" class="w-full h-80 object-cover rounded-xl mb-4" />
-            <div class="mb-6">
-            </div>
-              <div
-                class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              ></div>
-              <div class="relative z-10">
-                <div class="mb-6">
-                  <div
-                    class="text-blue-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110"
-                  >
-                    <i class="fas fa-tools"></i>
-                  </div>
-                </div>
-                <h3
-                  class="text-2xl font-semibold text-blue-700 mb-4 group-hover:text-blue-800 transition-colors duration-300"
-                >
-                  Mantención Especializada
-                </h3>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                  Evita pérdidas con mantenciones preventivas y soporte técnico
-                  rápido y eficaz.
-                </p>
-                <ul class="space-y-2 mb-6">
-                  <li class="flex items-center">
-                    <i class="fas fa-check text-green-500 mr-2"></i>
-                    <span>Mantenimiento preventivo</span>
-                  </li>
-                  <li class="flex items-center">
-                    <i class="fas fa-check text-green-500 mr-2"></i>
-                    <span>Soporte técnico 24/7</span>
-                  </li>
-                  <li class="flex items-center">
-                    <i class="fas fa-check text-green-500 mr-2"></i>
-                    <span>Diagnóstico remoto</span>
-                  </li>
-                </ul>
-                <div class="mt-6">
-                  <a
-                    href="#contacto"
-                    class="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-300"
-                  >
-                    <span>Saber más</span>
-                    <i
-                      class="fas fa-arrow-right ml-2 transform transition-transform duration-300 group-hover:translate-x-2"
-                    ></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
 
         <!-- Túneles de Congelado -->
-        <div class="service-card-3d group" data-aos="fade-up" data-aos-delay="400">
-          <div class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105">
-            <img src="./assets/tuneles.webp" alt="Túneles de Congelado" class="w-full h-80 object-cover rounded-xl mb-4" />
+        <div class="service-card-3d group min-w-[320px]" data-aos="fade-up" data-aos-delay="400">
+          <div
+            class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105">
+            <img src="./assets/tuneles.webp" alt="Túneles de Congelado"
+              class="w-full h-80 object-cover rounded-xl mb-4" />
             <div class="mb-6">
-              <div class="text-blue-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110">
+              <div
+                class="text-blue-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110">
                 <i class="fas fa-icicles"></i>
               </div>
             </div>
-            <h3 class="text-2xl font-semibold text-blue-700 mb-4 group-hover:text-blue-800 transition-colors duration-300">
+            <h3
+              class="text-2xl font-semibold text-blue-700 mb-4 group-hover:text-blue-800 transition-colors duration-300">
               Túneles de Congelado
             </h3>
             <p class="text-gray-600 leading-relaxed mb-4">
               Soluciones rápidas y seguras para congelado industrial intensivo. Conserva calidad y frescura.
             </p>
             <ul class="space-y-2 mb-6">
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Alta velocidad de congelado</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Alta velocidad de congelado
+              </li>
               <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Diseños personalizados</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Control automático de temperatura</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Control automático de
+                temperatura</li>
             </ul>
             <div class="mt-6">
-              <a href="#contacto" class="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-300">
+              <a href="#contacto"
+                class="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                <span>Saber más</span>
+                <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Aire Acondicionado -->
+        <div class="service-card-3d group min-w-[320px] overflow-x-auto-hide-scrollbar" data-aos="fade-up"
+          data-aos-delay="600">
+          <div
+            class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105">
+            <img src="./assets/aireacondicionado.webp" alt="Aire Acondicionado"
+              class="w-full h-80 object-cover rounded-xl mb-4" />
+            <div class="mb-6">
+              <div
+                class="text-blue-400 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110">
+                <i class="fas fa-wind"></i>
+              </div>
+            </div>
+            <h3
+              class="text-2xl font-semibold text-blue-500 mb-4 group-hover:text-blue-600 transition-colors duration-300">
+              Aire Acondicionado
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              Instalación y mantención de sistemas de aire acondicionado para industrias y comercios.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Instalación profesional</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Mantención preventiva</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Soluciones eficientes</li>
+            </ul>
+            <div class="mt-6">
+              <a href="#contacto"
+                class="inline-flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300">
                 <span>Saber más</span>
                 <i class="fas fa-arrow-right ml-2"></i>
               </a>
@@ -938,831 +966,854 @@
           </div>
         </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- Sitrad Full Gauge -->
-    <section
-      class="py-20 bg-gradient-to-t from-gray-100 to-blue-50 relative overflow-hidden"
-    >
-      <div class="max-w-7xl mx-auto px-6 relative z-10">
-        <div class="text-center mb-10" data-aos="fade-up">
-          <div class="flex justify-center items-center mb-8">
-            <img
-              src="./assets/Sitrad.png"
-              alt="Sitrad Logo"
-              class="h-24 transform hover:scale-110 transition-transform duration-300"
-            />
-          </div>
-          <h2 class="text-5xl font-bold text-gradient mb-6">
-            Monitoreo Inteligente para tu Negocio
-          </h2>
-          <p
-            class="text-xl text-gray-600 max-w-2xl mx-auto glass-effect p-4 rounded-xl"
-          >
-            Controla y optimiza tus sistemas de refrigeración desde cualquier
-            lugar
-          </p>
-        </div>
-
-        <!-- Beneficios Principales -->
-        <div class="w-full" data-aos="fade-up">
+        <div class="service-card-3d group min-w-[320px] overflow-x-auto-hide-scrollbar" data-aos="fade-up"
+          data-aos-delay="500">
           <div
-            class="relative p-12 rounded-2xl transform transition-all duration-500"
-          >
-            <div class="relative z-10">
-              <div class="text-center mb-12">
-                <h3 class="text-4xl font-bold text-primary-800 mb-4">
-                  Beneficios Clave
-                </h3>
-                <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
-                  Descubre cómo podemos transformar tu negocio
-                </p>
-              </div>
-
-              <div class="grid md:grid-cols-3 gap-8">
-                <div
-                  class="flex flex-col items-center p-8 rounded-xl transform transition-all duration-300 hover:scale-105 hover:shadow-lg bg-primary-50 border border-primary-200"
-                >
-                  <div class="bg-primary-600 p-6 rounded-full mb-6">
-                    <i class="fas fa-bolt text-white text-3xl"></i>
-                  </div>
-                  <h4
-                    class="text-xl font-semibold text-primary-800 text-center mb-4"
-                  >
-                    Optimización de Consumo
-                  </h4>
-                  <p class="text-neutral-600 text-center">
-                    Mejora la eficiencia energética y reduce los costos
-                    operativos de tu sistema
-                  </p>
-                </div>
-
-                <div
-                  class="flex flex-col items-center p-8 rounded-xl transform transition-all duration-300 hover:scale-105 hover:shadow-lg bg-primary-50 border border-primary-200"
-                >
-                  <div class="bg-primary-600 p-6 rounded-full mb-6">
-                    <i class="fas fa-shield-alt text-white text-3xl"></i>
-                  </div>
-                  <h4 class="text-xl font-semibold text-primary-800 mb-4">
-                    Protección Total
-                  </h4>
-                  <p class="text-neutral-600 text-center">
-                    Alertas instantáneas y monitoreo continuo para proteger tu
-                    inventario
-                  </p>
-                </div>
-
-                <div
-                  class="flex flex-col items-center p-8 rounded-xl transform transition-all duration-300 hover:scale-105 hover:shadow-lg bg-primary-50 border border-primary-200"
-                >
-                  <div class="bg-primary-600 p-6 rounded-full mb-6">
-                    <i class="fas fa-clock text-white text-3xl"></i>
-                  </div>
-                  <h4 class="text-xl font-semibold text-primary-800 mb-4">
-                    Control 24/7
-                  </h4>
-                  <p class="text-neutral-600 text-center">
-                    Acceso remoto y monitoreo constante desde cualquier
-                    dispositivo
-                  </p>
-                </div>
-              </div>
-
-              <div class="text-center mt-12">
-                <a
-                  href="#contacto"
-                  class="inline-flex items-center bg-primary-600 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
-                >
-                  <i class="fas fa-info-circle mr-2"></i>Solicitar cotización
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Por qué elegirnos -->
-    <section
-      id="nosotros"
-      class="py-20 bg-gradient-to-b from-gray-100 to-white relative overflow-hidden"
-    >
-      <div class="max-w-7xl mx-auto px-6 relative z-10">
-        <div class="text-center mb-16" data-aos="fade-up">
-          <img src="./assets/destacada1.webp" alt="Equipo CIFM" class="mx-auto rounded-xl shadow-lg mb-8"/>
-          <h2 class="text-5xl font-bold text-gradient mb-6">
-            CIFM: Líderes en Refrigeración Industrial en Chile
-          </h2>
-          <p
-            class="text-xl text-gray-600 max-w-2xl mx-auto glass-effect p-4 rounded-xl"
-          >
-            Más de 15 años de experiencia en soluciones de frío industrial
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Experiencia -->
-          <div
-            class="service-card-3d group"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div
-              class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105"
-            >
+            class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105">
+            <img src="./assets/tableros.webp" alt="Tableros Eléctricos"
+              class="w-full h-80 object-cover rounded-xl mb-4" />
+            <div class="mb-6">
               <div
-                class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              ></div>
-              <div class="relative z-10">
-                <div
-                  class="text-blue-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110"
-                >
-                  <i class="fas fa-history"></i>
-                </div>
-                <h3
-                  class="text-2xl font-semibold text-blue-700 mb-4 group-hover:text-blue-800 transition-colors duration-300"
-                >
-                  +15 años de experiencia
-                </h3>
-                <p class="text-gray-600 leading-relaxed">
-                  Más de una década brindando soluciones de refrigeración
-                  industrial de excelencia.
-                </p>
+                class="text-yellow-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110">
+                <i class="fas fa-bolt"></i>
               </div>
             </div>
-          </div>
-
-          <!-- Certificaciones -->
-          <div
-            class="service-card-3d group"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div
-              class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105"
-            >
-              <div
-                class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              ></div>
-              <div class="relative z-10">
-                <div
-                  class="text-green-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110"
-                >
-                  <i class="fas fa-certificate"></i>
-                </div>
-                <h3
-                  class="text-2xl font-semibold text-green-700 mb-4 group-hover:text-green-800 transition-colors duration-300"
-                >
-                  Certificaciones de calidad
-                </h3>
-                <p class="text-gray-600 leading-relaxed">
-                  Cumplimos con los más altos estándares de calidad y normativas
-                  vigentes.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Soporte -->
-          <div
-            class="service-card-3d group"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div
-              class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105"
-            >
-              <div
-                class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              ></div>
-              <div class="relative z-10">
-                <div
-                  class="text-blue-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110"
-                >
-                  <i class="fas fa-headset"></i>
-                </div>
-                <h3
-                  class="text-2xl font-semibold text-blue-700 mb-4 group-hover:text-blue-800 transition-colors duration-300"
-                >
-                  Soporte 24/7
-                </h3>
-                <p class="text-gray-600 leading-relaxed">
-                  Asistencia técnica permanente para garantizar el
-                  funcionamiento óptimo de tus sistemas.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Cobertura -->
-          <div
-            class="service-card-3d group"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div
-              class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105"
-            >
-              <div
-                class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              ></div>
-              <div class="relative z-10">
-                <div
-                  class="text-green-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110"
-                >
-                  <i class="fas fa-map-marked-alt"></i>
-                </div>
-                <h3
-                  class="text-2xl font-semibold text-green-700 mb-4 group-hover:text-green-800 transition-colors duration-300"
-                >
-                  Cobertura Nacional
-                </h3>
-                <p class="text-gray-600 leading-relaxed">
-                  Atendemos clientes en todo Chile con la misma calidad y
-                  compromiso.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonios -->
-    <section
-      id="testimonios"
-      class="py-20 bg-gradient-to-b from-neutral-50 via-primary-100 to-primary-900 relative overflow-hidden"
-    >
-      <div class="max-w-7xl mx-auto px-6 relative z-10">
-        <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-5xl font-bold text-gradient mb-6">
-            Testimonios de Clientes Satisfechos
-          </h2>
-          <p
-            class="text-xl text-gray-600 max-w-2xl mx-auto glass-effect p-4 rounded-xl"
-          >
-            Experiencias reales de empresas que confían en nuestros servicios de
-            refrigeración industrial
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8">
-          <div
-            class="service-card-3d group"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div
-              class="relative p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105"
-            >
-              <div
-                class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              ></div>
-              <div class="relative z-10">
-                <div class="flex items-center mb-4">
-                  <div class="text-yellow-400 text-2xl mr-2">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <blockquote
-                  class="text-lg text-gray-700 mb-4 group-hover:text-gray-800 transition-colors duration-300"
-                >
-                  "Gracias al sistema de refrigeración industrial y monitoreo
-                  remoto que nos instaló CIFM, hemos logrado reducir un 30%
-                  nuestro consumo energético y evitar pérdidas de stock. Su
-                  servicio técnico 24/7 nos da la tranquilidad que necesitamos."
-                </blockquote>
-                <div class="flex items-center">
-                  <div>
-                    <p class="text-sm text-gray-500">
-                      Empresa de Alimentos Frescos
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="service-card-3d group"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div
-              class="relative p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105"
-            >
-              <div
-                class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              ></div>
-              <div class="relative z-10">
-                <div class="flex items-center mb-4">
-                  <div class="text-yellow-400 text-2xl mr-2">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-                <blockquote
-                  class="text-lg text-gray-700 mb-4 group-hover:text-gray-800 transition-colors duration-300"
-                >
-                  "El sistema de monitoreo remoto de CIFM nos ha permitido
-                  optimizar nuestros procesos y reducir costos operativos en un
-                  25%. Su equipo técnico es altamente profesional y siempre
-                  disponible cuando los necesitamos."
-                </blockquote>
-                <div class="flex items-center">
-                  <div>
-                    <p class="text-sm text-gray-500">Cadena de Carnicerias</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SEO Content Section -->
-        <div class="mt-16 bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up">
-          <h3 class="text-3xl font-bold text-primary-800 mb-6">
-            Refrigeración Industrial en Chile: Soluciones Confiables
-          </h3>
-          <div class="prose max-w-none">
-            <p class="text-gray-700 mb-4">
-              En CIFM, somos líderes en refrigeración industrial en Chile,
-              ofreciendo soluciones integrales para empresas que requieren
-              sistemas de frío confiables y eficientes. Nuestros servicios
-              incluyen:
-            </p>
-            <ul class="list-disc pl-6 mb-4">
-              <li class="mb-2">
-                Instalación de cámaras frigoríficas industriales
-              </li>
-              <li class="mb-2">
-                Monitoreo remoto 24/7 de sistemas de refrigeración
-              </li>
-              <li class="mb-2">
-                Mantención preventiva y correctiva de equipos
-              </li>
-              <li class="mb-2">Optimización energética de sistemas de frío</li>
-              <li class="mb-2">Asesoría técnica especializada</li>
-            </ul>
-            <p class="text-gray-700">
-              Con más de 15 años de experiencia en el mercado chileno, hemos
-              desarrollado soluciones innovadoras que ayudan a nuestros clientes
-              a optimizar sus procesos y reducir costos operativos. Nuestro
-              equipo de profesionales altamente capacitados está comprometido
-              con la excelencia y la satisfacción del cliente.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="py-20 bg-primary-900 text-white">
-      <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-4" data-aos="fade-up">
-          ¿Necesitas una solución confiable de refrigeración?
-        </h2>
-        <p class="text-xl text-center mb-12" data-aos="fade-up">
-          Completa el formulario y te contactaremos a la brevedad.
-        </p>
-        <div class="grid md:grid-cols-2 gap-12">
-          <div class="max-w-2xl mx-auto" data-aos="fade-up">
-            <form id="contactForm" class="space-y-6">
-              <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label class="block mb-2">Nombre</label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-white/40"
-                    placeholder="Tu nombre"
-                    required
-                  />
-                  <span class="error-message"
-                    >Por favor, ingresa tu nombre</span
-                  >
-                </div>
-                <div>
-                  <label class="block mb-2">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-white/40"
-                    placeholder="tu@email.com"
-                    required
-                  />
-                  <span class="error-message"
-                    >Por favor, ingresa un email válido</span
-                  >
-                </div>
-              </div>
-              <div>
-                <label class="block mb-2">Teléfono</label>
-                <input
-                  type="tel"
-                  id="telefono"
-                  class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-white/40"
-                  placeholder="+56 9 XXXX XXXX (opcional)"
-                />
-              </div>
-              <div>
-                <label class="block mb-2">Tipo de Servicio</label>
-                <select
-                  id="servicio"
-                  class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-white/40"
-                  required
-                >
-                  <option value="">Selecciona un servicio</option>
-                  <option value="camaras">Cámaras Frigoríficas</option>
-                  <option value="monitoreo">Monitoreo en Tiempo Real</option>
-                  <option value="mantencion">Mantención Especializada</option>
-                  <option value="otro">Otro</option>
-                </select>
-                <span class="error-message"
-                  >Por favor, selecciona un servicio</span
-                >
-              </div>
-              <div>
-                <label class="block mb-2">Mensaje</label>
-                <textarea
-                  id="mensaje"
-                  class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-white/40 h-32"
-                  placeholder="Cuéntanos sobre tu proyecto"
-                  required
-                ></textarea>
-                <span class="error-message">Por favor, ingresa tu mensaje</span>
-              </div>
-              <div>
-                <button
-                  type="button"
-                  id="whatsappBtn"
-                  class="w-full bg-green-500 text-white font-semibold px-6 py-4 rounded-lg shadow-lg hover:bg-green-600 transition transform hover:scale-105 flex items-center justify-center gap-2"
-                >
-                  <i class="fab fa-whatsapp text-xl"></i>
-                  Contactar por WhatsApp
-                </button>
-              </div>
-            </form>
-          </div>
-          <div class="space-y-8" data-aos="fade-up">
-            <div class="bg-white/10 p-6 rounded-lg">
-              <h3 class="text-xl font-semibold mb-4">¿Por qué elegirnos?</h3>
-              <ul class="space-y-4">
-                <li class="flex items-start">
-                  <i class="fas fa-check-circle text-accent-500 mt-1 mr-3"></i>
-                  <span>Respuesta en menos de 24 horas</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check-circle text-accent-500 mt-1 mr-3"></i>
-                  <span>Cotización sin compromiso</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check-circle text-accent-500 mt-1 mr-3"></i>
-                  <span>Asesoría personalizada</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check-circle text-accent-500 mt-1 mr-3"></i>
-                  <span>Garantía extendida</span>
-                </li>
-              </ul>
-            </div>
-            <div class="bg-white/10 p-6 rounded-lg">
-              <h3 class="text-xl font-semibold mb-4">
-                Información de Contacto
-              </h3>
-              <div class="space-y-4">
-                <div class="flex items-center">
-                  <i class="fas fa-envelope mr-3 text-blue-300"></i>
-                  <span>cifmrefrigeracion@hotmail.com</span>
-                </div>
-                <div class="flex items-center">
-                  <i class="fas fa-map-marker-alt mr-3 text-blue-300"></i>
-                  <span>Santiago, Chile</span>
-                </div>
-              </div>
-            </div>
-            <div class="bg-white/10 p-6 rounded-lg">
-              <h3 class="text-xl font-semibold mb-4">Horario de Atención</h3>
-              <div class="space-y-2">
-                <div class="flex justify-between">
-                  <span>Lunes - Viernes:</span>
-                  <span>9:00 - 18:00</span>
-                </div>
-                <div class="flex justify-between">
-                  <span>Sábado:</span>
-                  <span>9:00 - 14:00</span>
-                </div>
-                <div class="flex justify-between">
-                  <span>Domingo:</span>
-                  <span>Cerrado</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-neutral-900 text-neutral-300 py-12">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="grid md:grid-cols-4 gap-8">
-          <div>
-            <h3 class="text-xl font-bold text-white mb-4">
-              CIFM Refrigeración Industrial
+            <h3
+              class="text-2xl font-semibold text-yellow-700 mb-4 group-hover:text-yellow-800 transition-colors duration-300">
+              Tableros Eléctricos
             </h3>
-            <p class="mb-4">
-              Expertos en refrigeración industrial y soluciones de frío en
-              Chile. Más de 15 años de experiencia en el mercado.
+            <p class="text-gray-600 leading-relaxed mb-4">
+              Diseño, fabricación y montaje de tableros eléctricos industriales con máxima seguridad y eficiencia.
             </p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-white mb-4">Servicios</h3>
-            <ul class="space-y-2">
-              <li>
-                <a href="#servicios" class="hover:text-white transition"
-                  >Cámaras Frigoríficas</a
-                >
-              </li>
-              <li>
-                <a href="#servicios" class="hover:text-white transition"
-                  >Monitoreo Remoto</a
-                >
-              </li>
-              <li>
-                <a href="#servicios" class="hover:text-white transition"
-                  >Mantención Industrial</a
-                >
-              </li>
-              <li>
-                <a href="#servicios" class="hover:text-white transition"
-                  >Optimización Energética</a
-                >
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Montaje profesional</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Normativas vigentes</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Soluciones personalizadas
               </li>
             </ul>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-white mb-4">Contacto</h3>
-            <ul class="space-y-2">
-              <li class="flex items-start">
-                <i class="fas fa-envelope mt-1 mr-3"></i>
-                <span>cifmrefrigeracion@hotmail.com</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-phone mt-1 mr-3"></i>
-                <span>+56 9 6596 0424</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
-                <span>Santiago, Chile</span>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-white mb-4">Enlaces útiles</h3>
-            <ul class="space-y-2">
-              <li>
-                <a href="#inicio" class="hover:text-white transition">Inicio</a>
-              </li>
-              <li>
-                <a href="#servicios" class="hover:text-white transition"
-                  >Servicios</a
-                >
-              </li>
-              <li>
-                <a href="#nosotros" class="hover:text-white transition"
-                  >Nosotros</a
-                >
-              </li>
-              <li>
-                <a href="#testimonios" class="hover:text-white transition"
-                  >Testimonios</a
-                >
-              </li>
-              <li>
-                <a href="#contacto" class="hover:text-white transition"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
+            <div class="mt-6">
+              <a href="#contacto"
+                class="inline-flex items-center text-yellow-600 hover:text-yellow-800 transition-colors duration-300">
+                <span>Saber más</span>
+                <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="border-t border-gray-800 mt-12 pt-8">
-          <div class="grid md:grid-cols-2 gap-4">
-            <div class="text-center md:text-left">
-              <p>
-                &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                CIFM Refrigeración Industrial. Todos los derechos reservados.
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sitrad Full Gauge -->
+  <section class="py-20 bg-gradient-to-t from-gray-100 to-blue-50 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <div class="flex justify-center items-center mb-8">
+          <img src="./assets/Sitrad.png" alt="Sitrad Logo"
+            class="h-24 transform hover:scale-110 transition-transform duration-300" />
+        </div>
+        <h2 class="text-5xl font-bold text-gradient mb-6">
+          Monitoreo Inteligente para tu Negocio
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto glass-effect p-4 rounded-xl">
+          Controla y optimiza tus sistemas de refrigeración desde cualquier
+          lugar
+        </p>
+      </div>
+
+      <!-- Beneficios Principales -->
+      <div class="w-full" data-aos="fade-up">
+        <div class="relative p-12 rounded-2xl transform transition-all duration-500">
+          <div class="relative z-10">
+            <div class="text-center mb-12">
+              <h3 class="text-4xl font-bold text-primary-800 mb-4">
+                Beneficios Clave
+              </h3>
+              <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
+                Descubre cómo podemos transformar tu negocio
               </p>
             </div>
-            <div class="text-center md:text-right">
-              <a href="/politica-privacidad" class="hover:text-white transition"
-                >Política de Privacidad</a
-              >
-              <span class="mx-2">|</span>
-              <a
-                href="/terminos-condiciones"
-                class="hover:text-white transition"
-                >Términos y Condiciones</a
-              >
+
+            <div class="grid md:grid-cols-3 gap-8">
+              <div
+                class="flex flex-col items-center p-8 rounded-xl transform transition-all duration-300 hover:scale-105 hover:shadow-lg bg-primary-50 border border-primary-200">
+                <div class="bg-primary-600 p-6 rounded-full mb-6">
+                  <i class="fas fa-bolt text-white text-3xl"></i>
+                </div>
+                <h4 class="text-xl font-semibold text-primary-800 text-center mb-4">
+                  Optimización de Consumo
+                </h4>
+                <p class="text-neutral-600 text-center">
+                  Mejora la eficiencia energética y reduce los costos
+                  operativos de tu sistema
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col items-center p-8 rounded-xl transform transition-all duration-300 hover:scale-105 hover:shadow-lg bg-primary-50 border border-primary-200">
+                <div class="bg-primary-600 p-6 rounded-full mb-6">
+                  <i class="fas fa-shield-alt text-white text-3xl"></i>
+                </div>
+                <h4 class="text-xl font-semibold text-primary-800 mb-4">
+                  Protección Total
+                </h4>
+                <p class="text-neutral-600 text-center">
+                  Alertas instantáneas y monitoreo continuo para proteger tu
+                  inventario
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col items-center p-8 rounded-xl transform transition-all duration-300 hover:scale-105 hover:shadow-lg bg-primary-50 border border-primary-200">
+                <div class="bg-primary-600 p-6 rounded-full mb-6">
+                  <i class="fas fa-clock text-white text-3xl"></i>
+                </div>
+                <h4 class="text-xl font-semibold text-primary-800 mb-4">
+                  Control 24/7
+                </h4>
+                <p class="text-neutral-600 text-center">
+                  Acceso remoto y monitoreo constante desde cualquier
+                  dispositivo
+                </p>
+              </div>
+            </div>
+
+            <div class="text-center mt-12">
+              <a href="#contacto"
+                class="inline-flex items-center bg-primary-600 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                <i class="fas fa-info-circle mr-2"></i>Solicitar cotización
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Back to Top Button -->
-    <button
-      class="back-to-top bg-primary-800 text-white p-3 rounded-full shadow-lg"
-    >
-      <i class="fas fa-arrow-up"></i>
-    </button>
+  <!-- Por qué elegirnos -->
+  <section id="nosotros" class="py-20 bg-gradient-to-b from-gray-100 to-white relative overflow-hidden scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-5xl font-bold text-gradient mb-6">
+          Proyectos realizados en CIFM Refrigeración Industrial
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto glass-effect p-4 rounded-xl">
+          Abarcamos soluciones integrales en refrigeración, con especialización en electricidad y mecánica industrial.
+        </p>
+       
+        <!-- Carrusel -->
+        <div class="swiper mySwiper relative max-w-4xl mx-auto mt-12">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/destacada1.webp" class="mx-auto rounded-xl shadow-lg mb-10" alt="Proyecto 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/destacada2.webp" class="mx-auto rounded-xl shadow-lg mb-10" alt="Proyecto 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/destacada3.webp" class="mx-auto rounded-xl shadow-lg mb-8" alt="Proyecto 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/destacada4.webp" class="mx-auto rounded-xl shadow-lg mb-8" alt="Proyecto 4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/destacada5.webp" class="mx-auto rounded-xl shadow-lg mb-8" alt="Proyecto 5" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/destacada6.webp" class="mx-auto rounded-xl shadow-lg mb-10" alt="Proyecto 6" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/destacada7.webp" class="mx-auto rounded-xl shadow-lg mb-10" alt="Proyecto 7" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="./assets/destacada9.webp" class="mx-auto rounded-xl shadow-lg mb-8" alt="Proyecto 9" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="./assets/destacada11.webp" class="mx-auto rounded-xl shadow-lg mb-10" alt="Proyecto 11" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/destacada12.webp" class="mx-auto rounded-xl shadow-lg mb-10" alt="Proyecto 12" />
+            </div>
+            
+           <div class="swiper-slide">
+              <img src="./assets/destacada21.webp" class="mx-auto rounded-xl shadow-lg mb-8" alt="Proyecto 21" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="./assets/destacada16.webp" class="mx-auto rounded-xl shadow-lg mb-10" alt="Proyecto 16" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/destacada17.webp" class="mx-auto rounded-xl shadow-lg mb-10" alt="Proyecto 17" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/destacada18.webp" class="mx-auto rounded-xl shadow-lg mb-8" alt="Proyecto 18" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="./assets/destacada20.webp" class="mx-auto rounded-xl shadow-lg mb-8" alt="Proyecto 20" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="./assets/destacada8.webp" class="mx-auto rounded-xl shadow-lg mb-8" alt="Proyecto 8" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/destacada10.webp" class="mx-auto rounded-xl shadow-lg mb-8" alt="Proyecto 10" />
+            </div>
 
-    <script>
-      // Initialize AOS with modern settings
-      AOS.init({
-        duration: 1000,
-        once: true,
-        mirror: false,
-        easing: "ease-out-cubic",
+            <div class="swiper-button-prev absolute top-1/2 -translate-y-1/2 left-2 z-10 opacity-100 visible !text-black"></div>
+            <div class="swiper-button-next absolute top-1/2 -translate-y-1/2 right-2 z-10 opacity-100 visible !text-black"></div>
+
+
+          </div>
+          
+        </div>
+        <!-- Fin del carrusel -->
+        
+        <h2 class="text-5xl font-bold text-gradient mb-10 py-2">
+          CIFM: Líderes en Refrigeración Industrial en Chile
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto glass-effect p-4 rounded-xl">
+          Más de 30 años de experiencia en soluciones de frío industrial
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Experiencia -->
+        <div class="service-card-3d group" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div class="relative z-10">
+              <div
+                class="text-blue-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110">
+                <i class="fas fa-history"></i>
+              </div>
+              <h3
+                class="text-2xl font-semibold text-blue-700 mb-4 group-hover:text-blue-800 transition-colors duration-300">
+                +30 años de experiencia
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Más de una década brindando soluciones de refrigeración
+                industrial de excelencia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificaciones -->
+        <div class="service-card-3d group" data-aos="fade-up" data-aos-delay="200">
+          <div
+            class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div class="relative z-10">
+              <div
+                class="text-green-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h3
+                class="text-2xl font-semibold text-green-700 mb-4 group-hover:text-green-800 transition-colors duration-300">
+                Certificaciones de calidad
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Cumplimos con los más altos estándares de calidad y normativas
+                vigentes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soporte -->
+        <div class="service-card-3d group" data-aos="fade-up" data-aos-delay="300">
+          <div
+            class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div class="relative z-10">
+              <div
+                class="text-blue-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h3
+                class="text-2xl font-semibold text-blue-700 mb-4 group-hover:text-blue-800 transition-colors duration-300">
+                Soporte 24/7
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Asistencia técnica permanente para garantizar el
+                funcionamiento óptimo de tus sistemas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cobertura -->
+        <div class="service-card-3d group" data-aos="fade-up" data-aos-delay="400">
+          <div
+            class="relative h-full p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div class="relative z-10">
+              <div
+                class="text-green-600 text-5xl mb-6 transform transition-transform duration-500 group-hover:scale-110">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <h3
+                class="text-2xl font-semibold text-green-700 mb-4 group-hover:text-green-800 transition-colors duration-300">
+                Cobertura Nacional
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Atendemos clientes en todo Chile con la misma calidad y
+                compromiso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios"
+    class="py-20 bg-gradient-to-b from-neutral-50 via-primary-100 to-primary-900 relative overflow-hidden scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-5xl font-bold text-gradient mb-6">
+          Testimonios de Clientes Satisfechos
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto glass-effect p-4 rounded-xl">
+          Experiencias reales de empresas que confían en nuestros servicios de
+          refrigeración industrial
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="service-card-3d group" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="relative p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div class="relative z-10">
+              <div class="flex items-center mb-4">
+                <div class="text-yellow-400 text-2xl mr-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <blockquote class="text-lg text-gray-700 mb-4 group-hover:text-gray-800 transition-colors duration-300">
+                "Gracias al sistema de refrigeración industrial y monitoreo
+                remoto que nos instaló CIFM, hemos logrado reducir un 30%
+                nuestro consumo energético y evitar pérdidas de stock. Su
+                servicio técnico 24/7 nos da la tranquilidad que necesitamos."
+              </blockquote>
+              <div class="flex items-center">
+                <div>
+                  <p class="text-sm text-gray-500">
+                    Empresa de Alimentos Frescos
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card-3d group" data-aos="fade-up" data-aos-delay="200">
+          <div
+            class="relative p-8 rounded-2xl bg-white shadow-xl transform transition-all duration-500 group-hover:scale-105">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div class="relative z-10">
+              <div class="flex items-center mb-4">
+                <div class="text-yellow-400 text-2xl mr-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <blockquote class="text-lg text-gray-700 mb-4 group-hover:text-gray-800 transition-colors duration-300">
+                "El sistema de monitoreo remoto de CIFM nos ha permitido
+                optimizar nuestros procesos y reducir costos operativos en un
+                25%. Su equipo técnico es altamente profesional y siempre
+                disponible cuando los necesitamos."
+              </blockquote>
+              <div class="flex items-center">
+                <div>
+                  <p class="text-sm text-gray-500">Cadena de Carnicerias</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEO Content Section -->
+      <div class="mt-16 bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up">
+        <h3 class="text-3xl font-bold text-primary-800 mb-6">
+          Refrigeración Industrial en Chile: Soluciones Confiables
+        </h3>
+        <div class="prose max-w-none">
+          <p class="text-gray-700 mb-4">
+            En CIFM, somos líderes en refrigeración industrial en Chile,
+            ofreciendo soluciones integrales para empresas que requieren
+            sistemas de frío confiables y eficientes. Nuestros servicios
+            incluyen:
+          </p>
+          <ul class="list-disc pl-6 mb-4">
+            <li class="mb-2">
+              Instalación de cámaras frigoríficas industriales
+            </li>
+            <li class="mb-2">
+              Monitoreo remoto 24/7 de sistemas de refrigeración
+            </li>
+            <li class="mb-2">
+              Mantención preventiva y correctiva de equipos
+            </li>
+            <li class="mb-2">Optimización energética de sistemas de frío</li>
+            <li class="mb-2">Asesoría técnica especializada</li>
+          </ul>
+          <p class="text-gray-700">
+            Con más de 30 años de experiencia en el mercado chileno, hemos
+            desarrollado soluciones innovadoras que ayudan a nuestros clientes
+            a optimizar sus procesos y reducir costos operativos. Nuestro
+            equipo de profesionales altamente capacitados está comprometido
+            con la excelencia y la satisfacción del cliente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-20 bg-primary-900 text-white scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-4" data-aos="fade-up">
+        ¿Necesitas una solución confiable de refrigeración?
+      </h2>
+      <p class="text-xl text-center mb-12" data-aos="fade-up">
+        Completa el formulario y te contactaremos a la brevedad.
+      </p>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="max-w-2xl mx-auto" data-aos="fade-up">
+          <form id="contactForm" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block mb-2">Nombre</label>
+                <input type="text" id="nombre"
+                  class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-white/40"
+                  placeholder="Tu nombre" required />
+                <span class="error-message">Por favor, ingresa tu nombre</span>
+              </div>
+              <div>
+                <label class="block mb-2">Email</label>
+                <input type="email" id="email"
+                  class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-white/40"
+                  placeholder="tu@email.com" required />
+                <span class="error-message">Por favor, ingresa un email válido</span>
+              </div>
+            </div>
+            <div>
+              <label class="block mb-2">Teléfono</label>
+              <input type="tel" id="telefono"
+                class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-white/40"
+                placeholder="+56 9 XXXX XXXX (opcional)" />
+            </div>
+            <div>
+              <label class="block mb-2">Tipo de Servicio</label>
+              <select id="servicio"
+                class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-white/40"
+                required>
+                <option value="">Selecciona un servicio</option>
+                <option value="camaras">Cámaras Frigoríficas</option>
+                <option value="monitoreo">Monitoreo en Tiempo Real</option>
+                <option value="mantencion">Mantención Especializada</option>
+                <option value="otro">Otro</option>
+              </select>
+              <span class="error-message">Por favor, selecciona un servicio</span>
+            </div>
+            <div>
+              <label class="block mb-2">Mensaje</label>
+              <textarea id="mensaje"
+                class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-white/40 h-32"
+                placeholder="Cuéntanos sobre tu proyecto" required></textarea>
+              <span class="error-message">Por favor, ingresa tu mensaje</span>
+            </div>
+            <div>
+              <button type="button" id="whatsappBtn"
+                class="w-full bg-green-500 text-white font-semibold px-6 py-4 rounded-lg shadow-lg hover:bg-green-600 transition transform hover:scale-105 flex items-center justify-center gap-2">
+                <i class="fab fa-whatsapp text-xl"></i>
+                Contactar por WhatsApp
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="space-y-8" data-aos="fade-up">
+          <div class="bg-white/10 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-4">¿Por qué elegirnos?</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-accent-500 mt-1 mr-3"></i>
+                <span>Respuesta en menos de 24 horas</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-accent-500 mt-1 mr-3"></i>
+                <span>Cotización sin compromiso</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-accent-500 mt-1 mr-3"></i>
+                <span>Asesoría personalizada</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-accent-500 mt-1 mr-3"></i>
+                <span>Garantía extendida</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white/10 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-4">
+              Información de Contacto
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <i class="fas fa-envelope mr-3 text-blue-300"></i>
+                <span>cifmrefrigeracion@hotmail.com</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-map-marker-alt mr-3 text-blue-300"></i>
+                <span>Santiago, Chile</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white/10 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-4">Horario de Atención</h3>
+            <div class="space-y-2">
+              <div class="flex justify-between">
+                <span>Lunes - Viernes:</span>
+                <span>9:00 - 18:00</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Sábado:</span>
+                <span>9:00 - 14:00</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Domingo:</span>
+                <span>Cerrado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-900 text-neutral-300 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-bold text-white mb-4">
+            CIFM Refrigeración Industrial
+          </h3>
+          <p class="mb-4">
+            Expertos en refrigeración industrial y soluciones de frío en
+            Chile. Más de 30 años de experiencia en el mercado.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-white mb-4">Servicios</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#servicios" class="hover:text-white transition">Cámaras Frigoríficas</a>
+            </li>
+            <li>
+              <a href="#servicios" class="hover:text-white transition">Monitoreo Remoto</a>
+            </li>
+            <li>
+              <a href="#servicios" class="hover:text-white transition">Mantención Industrial</a>
+            </li>
+            <li>
+              <a href="#servicios" class="hover:text-white transition">Optimización Energética</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-white mb-4">Contacto</h3>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-3"></i>
+              <span>cifmrefrigeracion@hotmail.com</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-phone mt-1 mr-3"></i>
+              <span>+56 9 6596 0424</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+              <span>Santiago, Chile</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-white mb-4">Enlaces útiles</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#inicio" class="hover:text-white transition">Inicio</a>
+            </li>
+            <li>
+              <a href="#servicios" class="hover:text-white transition">Servicios</a>
+            </li>
+            <li>
+              <a href="#nosotros" class="hover:text-white transition">Nosotros</a>
+            </li>
+            <li>
+              <a href="#testimonios" class="hover:text-white transition">Testimonios</a>
+            </li>
+            <li>
+              <a href="#contacto" class="hover:text-white transition">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="text-center md:text-left">
+            <p>
+              &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              CIFM Refrigeración Industrial. Todos los derechos reservados.
+            </p>
+          </div>
+          <div class="text-center md:text-right">
+            <a href="/politica-privacidad" class="hover:text-white transition">Política de Privacidad</a>
+            <span class="mx-2">|</span>
+            <a href="/terminos-condiciones" class="hover:text-white transition">Términos y Condiciones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top bg-primary-800 text-white p-3 rounded-full shadow-lg">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // Initialize AOS with modern settings
+    AOS.init({
+      duration: 1000,
+      once: true,
+      mirror: false,
+      easing: "ease-out-cubic",
+    });
+
+    // Enhanced scroll effect for navbar
+    window.addEventListener("scroll", function () {
+      const navbar = document.getElementById("navbar");
+      const backToTop = document.querySelector(".back-to-top");
+
+      if (window.scrollY > 50) {
+        navbar.classList.add("nav-scroll");
+        backToTop.classList.add("visible");
+      } else {
+        navbar.classList.remove("nav-scroll");
+        backToTop.classList.remove("visible");
+      }
+    });
+
+    // Mobile menu toggle
+    document
+      .getElementById("mobile-menu-button")
+      .addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
       });
 
-      // Enhanced scroll effect for navbar
-      window.addEventListener("scroll", function () {
-        const navbar = document.getElementById("navbar");
-        const backToTop = document.querySelector(".back-to-top");
-
-        if (window.scrollY > 50) {
-          navbar.classList.add("nav-scroll");
-          backToTop.classList.add("visible");
-        } else {
-          navbar.classList.remove("nav-scroll");
-          backToTop.classList.remove("visible");
-        }
-      });
-
-      // Mobile menu toggle
-      document
-        .getElementById("mobile-menu-button")
-        .addEventListener("click", function () {
-          document.getElementById("mobile-menu").classList.toggle("hidden");
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+          block: "start"
         });
+        
+      });
+    });
 
-      // Smooth scroll for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
+    // Back to top functionality
+    document
+      .querySelector(".back-to-top")
+      .addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
         });
       });
 
-      // Back to top functionality
-      document
-        .querySelector(".back-to-top")
-        .addEventListener("click", function () {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        });
+    // Add parallax effect to hero section
+    window.addEventListener("scroll", function () {
+      const hero = document.querySelector(".hero-section");
+      const scrolled = window.pageYOffset;
+      hero.style.backgroundPositionY = -(scrolled * 0.5) + "px";
+    });
 
-      // Add parallax effect to hero section
-      window.addEventListener("scroll", function () {
-        const hero = document.querySelector(".hero-section");
-        const scrolled = window.pageYOffset;
-        hero.style.backgroundPositionY = -(scrolled * 0.5) + "px";
+    // Form validation and submission
+    function validateForm() {
+      let isValid = true;
+      const nombre = document.getElementById("nombre");
+      const email = document.getElementById("email");
+      const servicio = document.getElementById("servicio");
+      const mensaje = document.getElementById("mensaje");
+
+      // Resetear errores
+      [nombre, email, servicio, mensaje].forEach((field) => {
+        field.classList.remove("input-error");
       });
 
-      // Form validation and submission
-      function validateForm() {
-        let isValid = true;
-        const nombre = document.getElementById("nombre");
-        const email = document.getElementById("email");
-        const servicio = document.getElementById("servicio");
-        const mensaje = document.getElementById("mensaje");
-
-        // Resetear errores
-        [nombre, email, servicio, mensaje].forEach((field) => {
-          field.classList.remove("input-error");
-        });
-
-        // Validar nombre
-        if (!nombre.value.trim()) {
-          nombre.classList.add("input-error");
-          nombre.focus();
-          isValid = false;
-        }
-
-        // Validar email
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!email.value.trim() || !emailRegex.test(email.value)) {
-          email.classList.add("input-error");
-          if (isValid) email.focus();
-          isValid = false;
-        }
-
-        // Validar servicio
-        if (!servicio.value) {
-          servicio.classList.add("input-error");
-          if (isValid) servicio.focus();
-          isValid = false;
-        }
-
-        // Validar mensaje
-        if (!mensaje.value.trim()) {
-          mensaje.classList.add("input-error");
-          if (isValid) mensaje.focus();
-          isValid = false;
-        }
-
-        return isValid;
+      // Validar nombre
+      if (!nombre.value.trim()) {
+        nombre.classList.add("input-error");
+        nombre.focus();
+        isValid = false;
       }
 
-      // WhatsApp Contact Functionality
-      document
-        .getElementById("whatsappBtn")
-        .addEventListener("click", function () {
-          if (!validateForm()) return;
+      // Validar email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email.value.trim() || !emailRegex.test(email.value)) {
+        email.classList.add("input-error");
+        if (isValid) email.focus();
+        isValid = false;
+      }
 
-          const nombre = document.getElementById("nombre").value.trim();
-          const email = document.getElementById("email").value.trim();
-          const telefono = document.getElementById("telefono").value.trim();
-          const servicio = document.getElementById("servicio").value;
-          const mensaje = document.getElementById("mensaje").value.trim();
+      // Validar servicio
+      if (!servicio.value) {
+        servicio.classList.add("input-error");
+        if (isValid) servicio.focus();
+        isValid = false;
+      }
 
-          const whatsappNumber = "+56965960424";
-          const whatsappMessage = `Hola, soy ${nombre} (${email}${
-            telefono ? ", " + telefono : ""
+      // Validar mensaje
+      if (!mensaje.value.trim()) {
+        mensaje.classList.add("input-error");
+        if (isValid) mensaje.focus();
+        isValid = false;
+      }
+
+      return isValid;
+    }
+
+    // WhatsApp Contact Functionality
+    document
+      .getElementById("whatsappBtn")
+      .addEventListener("click", function () {
+        if (!validateForm()) return;
+
+        const nombre = document.getElementById("nombre").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const telefono = document.getElementById("telefono").value.trim();
+        const servicio = document.getElementById("servicio").value;
+        const mensaje = document.getElementById("mensaje").value.trim();
+
+        const whatsappNumber = "+56965960424";
+        const whatsappMessage = `Hola, soy ${nombre} (${email}${telefono ? ", " + telefono : ""
           }). Me interesa el servicio de ${servicio}. Mensaje: ${mensaje}`;
-          const encodedMessage = encodeURIComponent(whatsappMessage);
+        const encodedMessage = encodeURIComponent(whatsappMessage);
 
-          window.open(
-            `https://wa.me/${whatsappNumber}?text=${encodedMessage}`,
-            "_blank"
-          );
-        });
-
-      // Remover clase de error al escribir
-      document
-        .querySelectorAll(
-          "#contactForm input, #contactForm textarea, #contactForm select"
-        )
-        .forEach((input) => {
-          input.addEventListener("input", function () {
-            this.classList.remove("input-error");
-          });
-        });
-
-      // Formato automático de teléfono
-      document
-        .getElementById("telefono")
-        .addEventListener("input", function (e) {
-          let value = e.target.value.replace(/\D/g, "");
-          if (value.length > 0) {
-            value = value.match(new RegExp(".{1,9}"))[0];
-            value = value.replace(/(\d{2})(\d{4})(\d{4})/, "+56 $1 $2 $3");
-            e.target.value = value;
-          }
-        });
-
-      // Analytics
-      function trackEvent(category, action, label) {
-        if (typeof gtag !== "undefined") {
-          gtag("event", action, {
-            event_category: category,
-            event_label: label,
-          });
-        }
-      }
-
-      // Track form interactions
-      document
-        .querySelectorAll(
-          "#contactForm input, #contactForm textarea, #contactForm select"
-        )
-        .forEach((element) => {
-          element.addEventListener("focus", () => {
-            trackEvent("Form", "Focus", element.id);
-          });
-        });
-
-      document.getElementById("whatsappBtn").addEventListener("click", () => {
-        trackEvent("Form", "WhatsApp Click", "Contact Form");
+        window.open(
+          `https://wa.me/${whatsappNumber}?text=${encodedMessage}`,
+          "_blank"
+        );
       });
-    </script>
-  </body>
+
+    // Remover clase de error al escribir
+    document
+      .querySelectorAll(
+        "#contactForm input, #contactForm textarea, #contactForm select"
+      )
+      .forEach((input) => {
+        input.addEventListener("input", function () {
+          this.classList.remove("input-error");
+        });
+      });
+
+    // Formato automático de teléfono
+    document
+      .getElementById("telefono")
+      .addEventListener("input", function (e) {
+        let value = e.target.value.replace(/\D/g, "");
+        if (value.length > 0) {
+          value = value.match(new RegExp(".{1,9}"))[0];
+          value = value.replace(/(\d{2})(\d{4})(\d{4})/, "+56 $1 $2 $3");
+          e.target.value = value;
+        }
+      });
+
+    // Analytics
+    function trackEvent(category, action, label) {
+      if (typeof gtag !== "undefined") {
+        gtag("event", action, {
+          event_category: category,
+          event_label: label,
+        });
+      }
+    }
+
+    // Track form interactions
+    document
+      .querySelectorAll(
+        "#contactForm input, #contactForm textarea, #contactForm select"
+      )
+      .forEach((element) => {
+        element.addEventListener("focus", () => {
+          trackEvent("Form", "Focus", element.id);
+        });
+      });
+
+    document.getElementById("whatsappBtn").addEventListener("click", () => {
+      trackEvent("Form", "WhatsApp Click", "Contact Form");
+    });
+
+    
+    
+  </script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Inicializar Swiper -->
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+
 </html>
